@@ -21,12 +21,12 @@ The implementation is divided into two main groups: **ECC Params Optimization** 
 - **Genetic Algorithm**: Implemented in `GA.py`, employing the DEAP library.
 - **Particle Swarm Optimization**: Implemented in `PSO.py`.
 - **ECC Parameters Files**: Contains best parameters found by GA and PSO (`ga_ecc_params.txt` and `pso_ecc_params.txt`).
-- **Utility Module**: `ai_ecc_utils.py` for assisting the creation of elliptic curves.
+- **Utility Module**: `ai_ecc_utils.py` for assisting in the creation of elliptic curves.
 
 ### B. E-commerce Simulation Group
-- **Standard Curves File**: `well-known_curves_params.txt` for standard cryptography curves.
+- **Standard Curves File**: `brainpoolP256r1.txt` and `secp256k1.txt` for standard cryptography curves.
 - **ECC Utility Module**: `ecc.py` for reading and structuring ECC parameters.
-- **Orders Dataset**: Invoices converted into order data for practical simulation.
+- **Orders Dataset**: `Online_Retail.xlsx` Invoices converted into order data for practical simulation.
 - **EntityA and EntityB**: Emulated e-commerce solution (`EntityA.py`) and simulated ERP server (`EntityB.py`) using Flask.
 - **Pollard's Rho Attack**: `pollards_rho_attack.py` to attack communication between entities and evaluate ECC parameters.
 
