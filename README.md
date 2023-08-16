@@ -92,7 +92,7 @@ Follow the steps below to execute the simulation:
     - `fitness_progression`: It contains the graphical representation of the fitness progression over generations.
     - `logs`: It contains the log files of the optimization processes. 
     
-    ###Note:
+    **Note**:
    Both `fitness_progression` and `logs` folders are added to `.gitignore`, so they will not be tracked by version control, and you may find them only in your local environment after running the scripts.
    
 4. **Execute ERP Emulated Solution**:
