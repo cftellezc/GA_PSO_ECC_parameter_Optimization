@@ -86,14 +86,20 @@ Follow the steps below to execute the simulation:
 1. **Optimize ECC Parameters**:
    - Run `ga.py` to generate the optimized parameters using Genetic Algorithm and save them to `ga_ecc_params.txt`.
    - Run `pso.py` to generate the optimized parameters using Particle Swarm Optimization and save them to `pso_ecc_params.txt`.
+
+2. **Generated Folders**:
+    After the execution of GA and PSO, two folders will be created in the local environment: fitness_progression and logs.
+    - fitness_progression: It contains the graphical representation of the fitness progression over generations.
+    - logs: It contains the log files of the optimization processes.
+    Note: Both `fitness_progression` and `logs` folders are added to `.gitignore`, so they will not be tracked by version control, and you may find them only in your local environment after running the scripts.
    
-2. **Execute ERP Emulated Solution**:
+3. **Execute ERP Emulated Solution**:
    - Run `EntityB.py` to start the emulated ERP solution. You'll be prompted to choose the type of ECC parameters to use (e.g., GA, PSO, or well-known curves).
 
-3. **Run E-commerce Solution**:
+4. **Run E-commerce Solution**:
    - Execute `EntityA.py` to send the dataset of the orders, utilizing the ECC parameters selected in the previous step, only if `EntityB.py` is running, otherwise, it won't work.
 
-4. **Attack the Solution**:
+5. **Attack the Solution**:
    - Finally, run `pollards_rho_attack.py` to execute Pollard's rho attack on the communication between `EntityA.py` and `EntityB.py` and evaluate the ECC parameters.
 
 Details on each script and further instructions can be found in the respective documentation within the repository.
