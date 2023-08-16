@@ -21,18 +21,63 @@ The implementation is divided into two main groups: **ECC Params Optimization** 
 - **Genetic Algorithm**: Implemented in `GA.py`, employing the DEAP library.
 - **Particle Swarm Optimization**: Implemented in `PSO.py`.
 - **ECC Parameters Files**: Contains best parameters found by GA and PSO (`ga_ecc_params.txt` and `pso_ecc_params.txt`).
-- **Utility Module**: `ai_ecc_utils.py` for assisting the creation of elliptic curves.
+- **Utility Module**: `ai_ecc_utils.py` for assisting in the creation of elliptic curves.
 
 ### B. E-commerce Simulation Group
-- **Standard Curves File**: `well-known_curves_params.txt` for standard cryptography curves.
+- **Standard Curves File**: `brainpoolP256r1.txt` and `secp256k1.txt` for standard cryptography curves.
 - **ECC Utility Module**: `ecc.py` for reading and structuring ECC parameters.
-- **Orders Dataset**: Invoices converted into order data for practical simulation.
+- **Orders Dataset**: `Online_Retail.xlsx` Invoices converted into order data for practical simulation.
 - **EntityA and EntityB**: Emulated e-commerce solution (`EntityA.py`) and simulated ERP server (`EntityB.py`) using Flask.
 - **Pollard's Rho Attack**: `pollards_rho_attack.py` to attack communication between entities and evaluate ECC parameters.
 
-## Recommendations
+## Project Structure
 
-Given the striking efficacy of GA and PSO in ECC optimization, we recommend immediate consideration of these findings for enhancing cybersecurity in third-party e-commerce integrations, especially in the context of pre-quantum computing era.
+The repository is organized as follows:
+```
+project-root/
+├── README.md
+├── LICENSE.md
+├── ecc_optimization/
+│ ├── GA.py
+│ ├── PSO.py
+│ └── ai_ecc_utils.py
+├── ecc_parameters/
+│ ├── ga_ecc_params.txt
+│ ├── pso_ecc_params.txt
+│ ├── brainpoolP256r1.txt
+│ └── secp256k1.txt
+├── e-commerce_simulation/
+│ ├── entityA.py
+│ ├── entityB.py
+│ ├── ecc.py
+│ └── pollard_rho_attack.py
+├── data/
+│ └── Online_Retail.xlsx
+├── requirements.txt
+└── assets/
+    └── environment_architecture.png
+```
+## Requirements
+
+Before running the code, you must install several Python packages that are used throughout the various scripts. Below is a description of the key packages:
+
+- **sympy**: For prime number checking.
+- **tinyec**: A library for elliptic curve cryptography.
+- **pycryptodome**: Cryptographic library offering various crypto algorithms.
+- **requests**: For making HTTP requests.
+- **pandas**: For data manipulation and analysis.
+- **matplotlib**: For plotting and visualization.
+- **gmpy2**: Provides arithmetic and mathematical functions.
+- **scikit-learn**: For various machine learning tasks.
+- **numpy**: For numerical operations.
+
+You can install these packages using the following command:
+
+```bash
+pip install sympy tinyec pycryptodome requests pandas matplotlib gmpy2 scikit-learn numpy
+```
+
+Make sure that you have Python and pip installed on your system before running the command.
 
 ## How to Run
 
@@ -53,11 +98,14 @@ Follow the steps below to execute the simulation:
 
 Details on each script and further instructions can be found in the respective documentation within the repository.
 
+## Architecture
+
+![A high-level diagram of the environment's architecture!](./assets/environment_architecture.png)
+
+## Recommendations
+
+Given the striking efficacy of GA and PSO in ECC optimization, we recommend immediate consideration of these findings for enhancing cybersecurity in third-party e-commerce integrations, especially in the context of pre-quantum computing era.
 
 ## License
 
-This project is licensed under the UNAL License - see the LICENSE.md file for details.
-
-## Acknowledgments
-
-We would like to thank all contributors and the community for supporting this research.
+This project is licensed under the MIT License - see the LICENSE.md file for details.
