@@ -91,7 +91,7 @@ Follow the steps below to execute the simulation:
    - Run `EntityB.py` to start the emulated ERP solution. You'll be prompted to choose the type of ECC parameters to use (e.g., GA, PSO, or well-known curves).
 
 3. **Run E-commerce Solution**:
-   - Execute `EntityA.py` to send the dataset of the orders, utilizing the ECC parameters selected in the previous step.
+   - Execute `EntityA.py` to send the dataset of the orders, utilizing the ECC parameters selected in the previous step, only if `EntityB.py` is running, otherwise, it won't work.
 
 4. **Attack the Solution**:
    - Finally, run `pollards_rho_attack.py` to execute Pollard's rho attack on the communication between `EntityA.py` and `EntityB.py` and evaluate the ECC parameters.
