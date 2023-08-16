@@ -46,9 +46,9 @@ Before running the code, you must install several Python packages that are used 
 
 You can install these packages using the following command:
 
-\`\`\`bash
+```bash
 pip install sympy tinyec pycryptodome requests pandas matplotlib gmpy2 scikit-learn numpy
-\`\`\`
+```
 
 Make sure that you have Python and pip installed on your system before running the command.
 
