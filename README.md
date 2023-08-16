@@ -21,7 +21,11 @@ The implementation is divided into two main groups: **ECC Params Optimization** 
 - **Genetic Algorithm**: Implemented in `GA.py`, employing the DEAP library.
 - **Particle Swarm Optimization**: Implemented in `PSO.py`.
 - **ECC Parameters Files**: Contains best parameters found by GA and PSO (`ga_ecc_params.txt` and `pso_ecc_params.txt`).
-- **Utility Module**: `ai_ecc_utils.py` for assisting in the creation of elliptic curves.
+- **Utility Module**: `ai_ecc_utils.py` This module assists with elliptic curve creation and validation.
+    - **Generation**: Provides functions for prime numbers and generator points using mathematical tools like the Legendre symbol.
+    - **Validation**: Checks elliptic curve parameters for validity, including cofactor, prime p, point validity, and more.
+    - **Security Evaluation**: Implements Pollard's rho attack to assess ECC parameters' security, employing various mathematical functions.
+    - **Fitness Calculation**: Calculates a cumulative fitness score for candidates by evaluating elliptic curve suitability, based on factors such as Hasse's theorem bounds, attack resistance, and curve order.
 
 ### B. E-commerce Simulation Group
 - **Standard Curves File**: `brainpoolP256r1.txt` and `secp256k1.txt` for standard cryptography curves.
