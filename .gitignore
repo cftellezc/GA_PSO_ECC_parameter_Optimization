@@ -1,0 +1,6 @@
+*.pyc
+*.logs
+e-commerce_simulation/__pycache__/
+ecc_optimization/__pycache__/
+fitness_progression/
+logs/
