@@ -30,9 +30,24 @@ The implementation is divided into two main groups: **ECC Params Optimization** 
 - **EntityA and EntityB**: Emulated e-commerce solution (`EntityA.py`) and simulated ERP server (`EntityB.py`) using Flask.
 - **Pollard's Rho Attack**: `pollards_rho_attack.py` to attack communication between entities and evaluate ECC parameters.
 
-## Recommendations
+## Prerequisites
 
-Given the striking efficacy of GA and PSO in ECC optimization, we recommend immediate consideration of these findings for enhancing cybersecurity in third-party e-commerce integrations, especially in the context of pre-quantum computing era.
+Before running the code, you must install several Python packages that are used throughout the various scripts. Below is a description of the key packages:
+
+- **sympy**: For prime number checking.
+- **tinyec**: A library for elliptic curve cryptography.
+- **pycryptodome**: Cryptographic library offering various crypto algorithms.
+- **requests**: For making HTTP requests.
+- **pandas**: For data manipulation and analysis.
+- **matplotlib**: For plotting and visualization.
+- **gmpy2**: Provides arithmetic and mathematical functions.
+- **scikit-learn**: For various machine learning tasks.
+- **numpy**: For numerical operations.
+
+You can install these packages using the following command:
+
+```bash
+pip install sympy tinyec pycryptodome requests pandas matplotlib gmpy2 scikit-learn numpy
 
 ## How to Run
 
@@ -56,6 +71,10 @@ Details on each script and further instructions can be found in the respective d
 ## Architecture
 
 ![A high-level diagram of the environment's architecture!](./assets/environment_architecture.png)
+
+## Recommendations
+
+Given the striking efficacy of GA and PSO in ECC optimization, we recommend immediate consideration of these findings for enhancing cybersecurity in third-party e-commerce integrations, especially in the context of pre-quantum computing era.
 
 ## License
 
