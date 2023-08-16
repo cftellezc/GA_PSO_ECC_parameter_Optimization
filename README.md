@@ -30,7 +30,34 @@ The implementation is divided into two main groups: **ECC Params Optimization** 
 - **EntityA and EntityB**: Emulated e-commerce solution (`EntityA.py`) and simulated ERP server (`EntityB.py`) using Flask.
 - **Pollard's Rho Attack**: `pollards_rho_attack.py` to attack communication between entities and evaluate ECC parameters.
 
-## Prerequisites
+## Project Structure
+
+The repository is organized as follows:
+```
+project-root/
+├── README.md
+├── LICENSE.md
+├── ecc_optimization/
+│ ├── GA.py
+│ ├── PSO.py
+│ └── ai_ecc_utils.py
+├── ecc_parameters/
+│ ├── ga_ecc_params.txt
+│ ├── pso_ecc_params.txt
+│ ├── brainpoolP256r1.txt
+│ └── secp256k1.txt
+├── e-commerce_simulation/
+│ ├── entityA.py
+│ ├── entityB.py
+│ ├── ecc.py
+│ └── pollard_rho_attack.py
+├── data/
+│ └── Online_Retail.xlsx
+├── requirements.txt
+└── assets/
+    └── environment_architecture.png
+```
+## Requirements
 
 Before running the code, you must install several Python packages that are used throughout the various scripts. Below is a description of the key packages:
 
