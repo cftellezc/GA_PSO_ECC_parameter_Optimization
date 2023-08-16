@@ -53,11 +53,10 @@ Follow the steps below to execute the simulation:
 
 Details on each script and further instructions can be found in the respective documentation within the repository.
 
+## Architecture
+
+![A high-level diagram of the environment's architecture!](./assets/environment_architecture.png)
 
 ## License
 
 This project is licensed under the UNAL License - see the LICENSE.md file for details.
-
-## Acknowledgments
-
-We would like to thank all contributors and the community for supporting this research.
