@@ -88,9 +88,9 @@ Follow the steps below to execute the simulation:
    - Run `pso.py` to generate the optimized parameters using Particle Swarm Optimization and save them to `pso_ecc_params.txt`.
 
 2. **Generated Folders**:
-    After the execution of GA and PSO, two folders will be created in the local environment: fitness_progression and logs.
-    - fitness_progression: It contains the graphical representation of the fitness progression over generations.
-    - logs: It contains the log files of the optimization processes.
+    After the execution of `ga.py` and `pso.py`, two folders will be created in the local environment: `fitness_progression` and `logs`.
+    - `fitness_progression`: It contains the graphical representation of the fitness progression over generations.
+    - `logs`: It contains the log files of the optimization processes. 
     Note: Both `fitness_progression` and `logs` folders are added to `.gitignore`, so they will not be tracked by version control, and you may find them only in your local environment after running the scripts.
    
 3. **Execute ERP Emulated Solution**:
