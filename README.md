@@ -120,4 +120,5 @@ Given the striking efficacy of GA and PSO in ECC optimization, we recommend imme
 
 ## License
 
-This project is licensed under the MIT License. For commercial use of the Software, prior notification to cftellezc@unal.edu.co or cftellezc@gmail.com is required. See the LICENSE.md file for details. 
+This project is licensed under the MIT License. For commercial use of the Software, prior notification to cftellezc@unal.edu.co or cftellezc@gmail.com is required. See the [LICENSE.md](https://github.com/cftellezc/GA_PSO_ECC_parameter_Optimization/blob/main/LICENSE.md) file for details. 
+
