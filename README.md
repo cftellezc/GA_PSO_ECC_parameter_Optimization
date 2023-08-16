@@ -36,7 +36,23 @@ Given the striking efficacy of GA and PSO in ECC optimization, we recommend imme
 
 ## How to Run
 
-Details on how to run the scripts and use the provided components can be found in the respective documentation within the repository.
+Follow the steps below to execute the simulation:
+
+1. **Optimize ECC Parameters**:
+   - Run `ga.py` to generate the optimized parameters using Genetic Algorithm and save them to `ga_ecc_params.txt`.
+   - Run `pso.py` to generate the optimized parameters using Particle Swarm Optimization and save them to `pso_ecc_params.txt`.
+   
+2. **Execute ERP Emulated Solution**:
+   - Run `EntityB.py` to start the emulated ERP solution. You'll be prompted to choose the type of ECC parameters to use (e.g., GA, PSO, or well-known curves).
+
+3. **Run E-commerce Solution**:
+   - Execute `EntityA.py` to send the dataset of the orders, utilizing the ECC parameters selected in the previous step.
+
+4. **Attack the Solution**:
+   - Finally, run `pollards_rho_attack.py` to execute Pollard's rho attack on the communication between `EntityA.py` and `EntityB.py` and evaluate the ECC parameters.
+
+Details on each script and further instructions can be found in the respective documentation within the repository.
+
 
 ## License
 
