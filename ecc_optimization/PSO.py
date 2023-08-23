@@ -226,7 +226,7 @@ def main():
     plt.plot(avg_fitnesses, label="Avg Fitness")
     plt.xlabel("Iteration")
     plt.ylabel("Fitness")
-    plt.title("Fitness Progression over Generations - PSO")
+    plt.title("Fitness Progression over Iterations - PSO")
     plt.legend()
 
     # Save the figure
