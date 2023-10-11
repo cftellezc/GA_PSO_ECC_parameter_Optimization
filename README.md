@@ -4,7 +4,7 @@ This repository contains the code and resources for a comprehensive analysis bet
 
 ## Introduction
 
-We explore and compare the **Genetic Algorithm (GA)** and **Particle Swarm Optimization (PSO)** to optimize ECC parameters, such as the elliptic curve coefficients, prime number, generator point, group order, and cofactor. The analysis is conducted in a simulated e-commerce environment, with a strong focus on traditional computing. For detailed insights into the study's methodology and findings, please refer to the corresponding paper [here](https://doi.org/10.48550/arXiv.2310.06752).
+We explore and compare the **Genetic Algorithm (GA)** and **Particle Swarm Optimization (PSO)** to optimize ECC parameters, such as the elliptic curve coefficients, prime number, generator point, group order, and cofactor. The analysis is conducted in a simulated e-commerce environment, with a strong focus on traditional computing. For detailed insights into the study's methodology and findings, please refer to the corresponding paper [Comparing AI Algorithms for Optimizing Elliptic Curve Cryptography Parameters in Third-Party E-Commerce Integrations: A Pre-Quantum Era Analysis](https://doi.org/10.48550/arXiv.2310.06752).
 
 ## Main Findings
 
